@@ -1,0 +1,13 @@
+{
+  "active": true,
+  "application": "x_travelr",
+  "hint": "Manage travel requests",
+  "link_type": "LIST",
+  "name": "Travel Requests",
+  "order": 100,
+  "query": "",
+  "roles": "",
+  "table": "u_travel_request",
+  "title": "Travel Requests",
+  "window_name": ""
+}

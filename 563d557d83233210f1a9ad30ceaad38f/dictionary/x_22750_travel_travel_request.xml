@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7c3ed9bd83233210f1a9ad30ceaad3a5" label="Travel Request" max_length="40" name="x_22750_travel_travel_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Submission Date" max_length="40" name="submission_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="draft" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Submitted" value="submitted"/>
+                <element inactive_on_update="false" label="Approved" sequence="0" value="Approved"/>
+                <element inactive_on_update="false" label="Draft" value="draft"/>
+                <element inactive_on_update="false" label="Closed" value="closed"/>
+                <element inactive_on_update="false" label="Rejected" sequence="0" value="Rejected"/>
+                <element inactive_on_update="false" label="Under Approval" value="under_approval"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Employee name" max_length="40" name="employee_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Destination city" max_length="40" name="destination_city" type="string"/>
+        <element attributes="encode_utf8=false" label="Destination country" max_length="32" name="destination_country" reference="core_country" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="omit_sys_original=true" label="Estimated cost" max_length="20" name="estimated_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Purpose" max_length="500" name="purpose" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Manager approval" max_length="40" name="manager_approval" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="Pending"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="destination_country"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

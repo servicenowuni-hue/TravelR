@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_db_table">
+    <sys_db_table action="INSERT_OR_UPDATE">
+        <name>u_travel_request</name>
+        <label>Travel Request</label>
+        <extends_table>task</extends_table>
+        <create_access_controls>true</create_access_controls>
+        <create_audit_table>true</create_audit_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+        <sys_id>generated_sys_id_table</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+    </sys_db_table>
+</record_update>

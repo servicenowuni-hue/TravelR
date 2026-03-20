@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <collection>u_travel_request</collection>
+        <condition>current.u_status == 'submitted' &amp;&amp; previous.u_status != 'submitted'</condition>
+        <description>Business rule for travel request approval</description>
+        <execute_function>false</execute_function>
+        <filter_condition></filter_condition>
+        <name>Travel Request Approval</name>
+        <order>100</order>
+        <priority>100</priority>
+        <script>(function executeRule(current, previous /*null when async*/) {
+  // Business rule for travel request approval
+  if (current.u_status == 'submitted' &amp;&amp; previous.u_status != 'submitted') {
+    // Create approval record
+    var approval = new GlideRecord('sysapproval_approver');
+    approval.initialize();
+    approval.sysapproval = current.sys_id;
+    approval.approver = current.u_requested_by.manager; // Assume manager approves
+    approval.insert();
+  }
+})(current, previous);</script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+        <sys_id>generated_sys_id_br</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+        <template></template>
+        <when>after</when>
+    </sys_script>
+</record_update>

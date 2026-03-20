@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <name>u_travel_request</name>
+        <label>Travel Request</label>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+        <sys_id>generated_sys_id_object</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+        <sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_requested_by</element>
+                <column_label>Requested By</column_label>
+                <internal_type>reference</internal_type>
+                <reference>sys_user</reference>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_1</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+            </sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_destination</element>
+                <column_label>Destination</column_label>
+                <internal_type>string</internal_type>
+                <max_length>100</max_length>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_2</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+            </sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_purpose</element>
+                <column_label>Purpose</column_label>
+                <internal_type>string</internal_type>
+                <max_length>500</max_length>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_3</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+            </sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_start_date</element>
+                <column_label>Start Date</column_label>
+                <internal_type>date</internal_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_4</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+            </sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_end_date</element>
+                <column_label>End Date</column_label>
+                <internal_type>date</internal_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_5</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+            </sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_estimated_cost</element>
+                <column_label>Estimated Cost</column_label>
+                <internal_type>currency</internal_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_6</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+            </sys_dictionary>
+            <sys_dictionary action="INSERT_OR_UPDATE">
+                <element>u_status</element>
+                <column_label>Status</column_label>
+                <internal_type>choice</internal_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                <sys_id>generated_sys_id_7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+                <sys_choice>
+                    <sys_choice action="INSERT_OR_UPDATE">
+                        <value>draft</value>
+                        <label>Draft</label>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                        <sys_id>generated_sys_id_choice1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+                    </sys_choice>
+                    <sys_choice action="INSERT_OR_UPDATE">
+                        <value>submitted</value>
+                        <label>Submitted</label>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                        <sys_id>generated_sys_id_choice2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+                    </sys_choice>
+                    <sys_choice action="INSERT_OR_UPDATE">
+                        <value>approved</value>
+                        <label>Approved</label>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                        <sys_id>generated_sys_id_choice3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+                    </sys_choice>
+                    <sys_choice action="INSERT_OR_UPDATE">
+                        <value>rejected</value>
+                        <label>Rejected</label>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2023-10-01 00:00:00</sys_created_on>
+                        <sys_id>generated_sys_id_choice4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2023-10-01 00:00:00</sys_updated_on>
+                    </sys_choice>
+                </sys_choice>
+            </sys_dictionary>
+        </sys_dictionary>
+    </sys_db_object>
+</record_update>

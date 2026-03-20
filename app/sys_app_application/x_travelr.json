@@ -1,0 +1,9 @@
+{
+  "active": "true",
+  "description": "Application for managing travel requests in ServiceNow",
+  "name": "TravelR",
+  "scope": "x_travelr",
+  "short_description": "Travel Request Management",
+  "vendor": "servicenowuni-hue",
+  "version": "1.0.0"
+}
